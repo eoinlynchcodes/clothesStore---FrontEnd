@@ -7,7 +7,7 @@ export const Navigation = () => {
     const history = useHistory();
 
     const goHome = () => {
-        history.push('/goHome')
+        history.push('/')
     }
 
     const register = () => {
