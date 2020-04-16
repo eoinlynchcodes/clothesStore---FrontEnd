@@ -22,7 +22,7 @@ export const SellerDashboard = () => {
             <select>
                 <option value="neverWorn">Never Worn</option>
                 <option value="wornOnce">Worn Once</option>
-                <option value="perfectCondition">Perfect Condition</option>
+                <option value="perfectCondition">Worn but Perfect</option>
                 <option value="good">Good</option>
                 <option value="looksWorn">Looks Worn</option>
                 <option value="ruggedOrDamaged">Rugged/Damaged(see Description)</option>
