@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import axios from 'axios';
+// import axios from 'axios';
 
 export const SellerDashboard = () => {
 
@@ -9,6 +9,7 @@ export const SellerDashboard = () => {
         itemType: '',
         size: '',
         description: '',
+        image: 'workOutHowToPassImages'
 
     });
  
@@ -21,7 +22,8 @@ const handleChange = (event) => {
 
 const handleSubmit = (event) => {
     event.preventDefault();
-    axios.post('http://localhost:7000/api/clothesManagement/')
+    console.log(itemToSell);
+    // axios.post('http://localhost:9000/api/clothesManagement/')
 }
 
 

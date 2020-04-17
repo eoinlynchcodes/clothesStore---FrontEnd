@@ -6,7 +6,7 @@ import axios from 'axios';
 export const Login = () => {
 
     const [ loginCredentials, setLoginCredentials ] = useState({
-        emailAddress: '',
+        username: '',
         password: ''
     });
 
@@ -22,7 +22,7 @@ export const Login = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
         console.log(loginCredentials);
-        axios.post('http://localhost:7000/api/authentication/login', loginCredentials)
+        axios.post('http://localhost:5000/api/authentication/login', loginCredentials)
         .then(response => {
             setLoginCredentials(response.data);
             history.push('/sellerDashboard');
@@ -36,12 +36,12 @@ export const Login = () => {
         <div>
             <form onSubmit={event => handleSubmit(event)}>
             <h3>Login and Start Selling</h3>
-            <label>Email Address:</label>
+            <label>Username:</label>
                 <input 
-                placeholder="Email Address"
+                placeholder="Username"
                 type="text"
-                name="emailAddress"
-                value={loginCredentials.emailAddress}
+                name="username"
+                value={loginCredentials.username}
                 onChange={event => handleChange(event)}
                 />
                 <br/>
