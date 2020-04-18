@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 // import axios from 'axios';
+import { SellerNav } from './SellerNav';
 
 export const SellerDashboard = () => {
 
@@ -23,12 +24,13 @@ const handleChange = (event) => {
 const handleSubmit = (event) => {
     event.preventDefault();
     console.log(itemToSell);
-    // axios.post('http://localhost:9000/api/clothesManagement/')
+    // axios.post('http://localhost:5000/api/clothesManagement/')
 }
 
 
     return (
         <div>
+            <SellerNav/>
         <h1>Seller Dashboard</h1>
 
         <h3>How it works:</h3>
