@@ -8,7 +8,7 @@ export default function Register(){
     const handleSubmit = (event) => {
         event.preventDefault();
         console.log(registerObject);
-            axios.post('http://localhost:9000/api/authentication/register', registerObject)
+            axios.post('http://localhost:5000/api/authentication/register', registerObject)
             .then(res => {
                 setRegisterObject(res.data);
                 history.push('/login');
