@@ -12,7 +12,7 @@ function App() {
       <Router>
         <Route exact path="/">
           <Navigation />
-          <h3>Yo, this here is App component.</h3>
+          <h3>Yo. Welcome to the HomePage of the ClothesStore</h3>
         </Route>
 
         <Route exact path="/register">

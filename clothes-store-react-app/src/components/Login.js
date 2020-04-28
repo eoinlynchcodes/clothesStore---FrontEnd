@@ -24,6 +24,7 @@ export const Login = () => {
         console.log(loginCredentials);
         axios.post('http://localhost:5000/api/authentication/login', loginCredentials)
         .then(response => {
+            debugger
             setLoginCredentials(response.data);
             history.push('/sellerDashboard');
         })

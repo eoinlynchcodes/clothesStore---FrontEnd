@@ -7,6 +7,7 @@ export default function Register(){
 
     const handleSubmit = (event) => {
         event.preventDefault();
+        debugger
         console.log(registerObject);
             axios.post('http://localhost:5000/api/authentication/register', registerObject)
             .then(res => {
